@@ -1,0 +1,743 @@
+indextools\\.js:IndexTools
+static\\.scribefire\\.com\\/ads\\.js:ScribeFire QuickAds
+(static\\.getclicky\\.com\\/|clicky\\.js):Clicky
+statisfy\\.net\\/javascripts\\/stats\\.js:Statisfy
+gmodules\\.com\\/:Google Widgets
+rate\\.thummit\\.com\\/js\\/:Thummit
+twitter\\.com\\/(javascripts\\/[0-9a-z]+\\.js|statuses\\/user_timeline\\/):Twitter Badge
+widgets\\.twimg\\.com\\/j\\/:Twitter Badge
+analytics\\.live\\.com\\/:Microsoft Analytics
+(pub\\.lookery\\.com\\/js\\/|lookery\\.com\\/look\\.js|\\/j\\/pub\\/look\\.js):Lookery
+google-analytics\\.com\\/(urchin\\.js|ga\\.js):Google Analytics
+\\/__utm\\.:Google Analytics
+\\.mybloglog\\.com\\/:MyBlogLog
+(\\.quantserve\\.com\\/|\\/quant\\.js):Quantcast
+sitemeter\\.com\\/(js\\/counter\\.js|meter\\.asp):SiteMeter
+www\\.lijit\\.com\\/informers\\/wijits:Lijit
+\\.lijit\\.com\\/delivery:Lijit
+\\.1[12]2\\.2o7\\.net\\/:Omniture
+hitbox\\.com:Omniture
+\\.omtrdc\\.net\\/:Omniture
+\\/(omniture|mbox|hbx|omniunih)(.*)?\\.js:Omniture
+s(c)?_code[0-9a-zA-Z_-]*(\\.[0-9a-zA-Z_-]*)?\\.js:Omniture
+common\\.onset\\.freedom\\.com\\/fi\\/analytics\\/cms\\/:Omniture
+cetrk\\.com\\/:Crazy Egg
+dnn506yrbagrg\\.cloudfront\\.net:Crazy Egg
+(shots\\.snap\\.com\\/snap_shots\\.js|spa\\.snap\\.com\\/snap_preview_anywhere\\.js):Snap
+\\.statcounter\\.com\\/counter\\/(counter[0-9a-zA-Z_]*|frames)\\.js:Statcounter
+c\\.statcounter\\.com\\/:Statcounter
+\\/mint\\/\\?js:Mint
+(stats\\.wordpress\\.com\\/|s\\.stats\\.wordpress\\.com\\/w\\.js):Wordpress Stats
+\\/salog\\.js\\.aspx:HubSpot
+(\\.analytics\\.yahoo\\.com\\/indextools\\.js|ystat\\.js|\\.yimg\\.com\\/.*\\/ywa\\.js|\\.visualrevenue\\.com\\/):Yahoo Analytics
+\\/js_source\\/whv2_001\\.js:Yahoo Analytics
+visit\\.webhosting\\.yahoo\\.com:Yahoo Analytics
+otracking\\.com\\/js:OrangeSoda
+analytics\\.engagd\\.com\\/archin-std\\.js:Engagd
+\\.nuggad\\.net\\/bk:Nugg.Ad
+gwp\\.nuggad\\.net:Nugg.Ad
+\\.fmpub\\.net\\/:Federated Media
+(bid|d[0-9]?)\\.openx\\.(org|net)\\/:OpenX
+\\/(adg|adx)\\.js:OpenX
+\\/(afr|ajs|avw)\\.php:OpenX
+www\\.assoc-amazon\\.(com|ca|co\\.uk|de|jp)\\/(e\\/ir|s\\/(ads\\.js|asw\\.js|link-enhancer)):Amazon Associates
+rcm-ca\\.amazon\\.ca\\/e\\/cm:Amazon Associates
+rcm-uk\\.amazon\\.co\\.uk\\/e\\/cm:Amazon Associates
+rcm-de\\.amazon\\.de\\/e\\/cm:Amazon Associates
+wms\\.assoc-amazon\\.com:Amazon Associates
+rcm\\.amazon\\.com\\/e\\/cm:Amazon Associates
+(feeds\\.feedburner\\.com\\/~fs\\/|feedproxy\\.google\\.com\\/~fc\\/):FeedBurner
+clustrmaps\\.com\\/counter\\/:ClustrMaps
+(feedjit\\.com\\/serve\\/|feedjit\\.com\\/map\\/):Feedjit
+log\\.feedjit\\.com:Feedjit
+(\\.googlesyndication\\.com\\/pagead\\/|googletagservices\\.com\\/tag\\/js\\/gpt\\.js|partner\\.googleadservices\\.com\\/gampad\\/|feedads\\.g\\.doubleclick\\.net\\/~at):Google Adsense
+google\\.com\\/afsonline\\/show_afs_ads\\.js:Google Adsense
+google\\.com\\/adsense\\/search\\/ads\\.js:Google Adsense
+\\.googlesyndication\\.com\\/apps\\/domainpark\\/:Google Adsense
+\\.hittail\\.com\\/mlt\\.js:HitTail
+friendfeed\\.com\\/embed\\/widget\\/:FriendFeed
+\\/woopra(\\.v(2|3|4))?\\.js:Woopra
+ad(-apac)?\\.([a-z][a-z]\\.)?doubleclick\\.net\\/:DoubleClick
+destinationurl\\.com:DoubleClick
+\\.doubleclick\\.net\\/pagead\\/:DoubleClick
+ad-g\\.doubleclick\\.net\\/:DoubleClick
+static\\.crowdscience\\.com\\/start(-.*)?\\.js:Crowd Science
+\\.imrworldwide\\.com\\/:NetRatings SiteCensus
+\\/piwik\\.js:Piwik Analytics
+www\\.typepad\\.com\\/t\\/stats:Typepad Stats
+(Tacoda_AMS_DDC_Header\\.js|\\.tacoda\\.net):Tacoda
+(ad\\.yieldmanager\\.com\\/|optimizedby\\.rmxads\\.com|e\\.yieldmanager\\.net\\/script\\.js):Right Media
+ad\\.yieldmanager\\.com\\/pixel:Right Media
+(content\\.dl-rms\\.com\\/|\\.dlqm\\.net\\/|\\.questionmarket\\.com\\/):Dynamic Logic
+trackingTags_v1\\.1\\.js:WebTrends
+m\\.webtrends\\.com:WebTrends
+\\/webtrends(.*)?\\.js:WebTrends
+\\.webtrendslive\\.com:WebTrends
+\\.xiti\\.com\\/(hit\\.xiti|get\\.at):XiTi
+\\/js_xiti\\.js:XiTi
+\\/xtcore\\.js:XiTi
+(\\/share-this\\.php|w\\.sharethis\\.com\\/):ShareThis
+(\\/seesmic_topposters_v2\\.js|seesmic-wp\\.js):Seesmic
+static\\.addtoany\\.com\\/menu\\/(feed|page)\\.js:AddtoAny
+\\/addthis_widget\\.(js|php):AddThis
+\\.addthis\\.com\\/js\\/widget\\.(js|php):AddThis
+l\\.addthiscdn\\.com:AddThis
+\\.revsci\\.net\\/:Revenue Science
+wunderloop\\.net\\/:Revenue Science
+ad\\.targetingmarketplace\\.com\\/:Revenue Science
+revsci\\.(.*)\\/gw\\.js:Revenue Science
+(ads|clients|container)\\.pointroll\\.com:PointRoll
+\\/chartbeat\\.js:ChartBeat
+\\.uservoice\\.com\\/:UserVoice
+(pixel|optimized-by|tap-cdn)\\.rubiconproject\\.com\\/:Rubicon
+www\\.conversionruler\\.com\\/bin\\/js\\.php:ConversionRuler
+lct\\.salesforce\\.com\\/sfga\\.js:Salesforce
+\\.(sphere|surphace)\\.com\\/widgets\\/sphereit\\/js:Sphere
+widget\\.criteo\\.com:Criteo
+dis(.*)?\\.criteo\\.com:Criteo
+(social\\.bidsystem\\.com\\/|cubics\\.com\\/displayAd\\.js):Cubics
+resources\\.infolinks\\.com\\/js\\/infolinks_main\\.js:InfoLinks
+ads(1)?\\.msn\\.com\\/library\\/dap\\.js:MSN Ads
+adsyndication\\.msn\\.com\\/delivery\\/getads\\.js:MSN Ads
+widgets\\.outbrain\\.com\\/:Outbrain
+www\\.google\\.com\\/friendconnect\\/script\\/friendconnect\\.js:Google FriendConnect
+www\\.google\\.com\\/coop\\/cse\\/brand:Google Custom Search Engine
+www\\.google\\.com\\/uds\\/api\\?:Google AJAX Search API
+kona\\.kontera\\.com\\/javascript\\/:Kontera ContentLink
+\\.adbrite\\.com\\/:AdBrite
+(\\.adultadworld\\.com\\/geopop\\/geoinject\\.js|\\.adultadworld\\.com\\/jsc\\/):AdultAdWorld
+\\.gunggo\\.com\\/show_ad\\.ashx:Gunggo
+doublepimp\\.com\\/getad\\.js:DoublePimp
+ads\\.sexinyourcity\\.com\\/:SexInYourCity
+ads\\.(lzjl|clicksor)\\.com:Clicksor
+static\\.hubspot\\.com\\/websiteGraderBadge\\/badge\\.js:HubSpot WebsiteGrader
+(js\\.adsonar\\.com\\/js\\/|ads\\.adsonar\\.com\\/adserving\\/):Quigo AdSonar
+www\\.blogcatalog\\.com\\/w\\/recent\\.php:BlogCatalog
+\\.technorati\\.com\\/:Technorati Widget
+xslt\\.alexa\\.com\\/site_stats\\/js\\/t\\/:Alexa Traffic Rank
+(\\.tribalfusion\\.com\\/|tags\\.expo9\\.exponential\\.com\\/tags\\/):Tribal Fusion
+disqus\\.com\\/forums\\/:Disqus
+mediacdn\\.disqus\\.com:Disqus
+ads\\.sixapart\\.com\\/:Six Apart Advertising
+ads\\.blogherads\\.com\\/:BlogHer Ads
+o\\.aolcdn\\.com\\/ads\\/adswrapper:Advertising.com
+o\\.aolcdn\\.com\\/js\\/mg2\\.js:Advertising.com
+(r1\\.ace|ace-tag|servedby|uac)\\.advertising\\.com:Advertising.com
+\\.atwola\\.com\\/:Advertising.com
+leadback\\.advertising\\.com\\/adcedge\\/lb:LeadBack
+\\.doubleclick\\.net\\/activity;:DoubleClick Spotlight
+\\.overture\\.com\\/(partner\\/)?js:Yahoo! Overture
+perf\\.overture\\.com:Yahoo! Overture
+(www\\.)?intensedebate\\.com\\/js\\/:Intense Debate
+facebook\\.com\\/connect:Facebook Connect
+connect\\.facebook\\.net:Facebook Connect
+static\\.ak\\.connect\\.facebook\\.com\\/.*\\.js\\.php:Facebook Connect
+\\/fbconnect\\.js:Facebook Connect
+(static\\.btbuckets\\.com\\/bt\\.js|\\.n\\.btbuckets\\.com\\/js):BTBuckets
+(cdn|g2|gonzogrape)\\.gumgum\\.com\\/javascripts\\/ggv2\\.js:gumgum
+hook\\.yieldbuild\\.com\\/s_ad\\.js:YieldBuild
+d\\.yimg\\.com\\/ds\\/badge\\.js:Yahoo! Buzz
+baynote(-observer)?([0-9]+)?\\.js:Baynote Observer
+baynote\\.net:Baynote Observer
+triggit\\.com\\/tool\\/javascripts\\/trg_bs\\.js:TriggIt
+digg\\.com\\/tools\\/widgetjs:Digg Widget
+widgets\\.digg\\.com:Digg Widget
+cache\\.blogads\\.com\\/:Blogads
+\\.zedo\\.com\\/:Zedo
+\\.intellitxt\\.com:Vibrant Ads
+s3\\.amazonaws\\.com\\/getsatisfaction\\.com\\/(feedback\\/feedback\\.js|javascripts\\/feedback-v2\\.js):GetSatisfaction
+\\.afy11\\.net\\/:Adify
+server\\.iad\\.liveperson\\.net\\/:LivePerson
+\\/k_(push|button)\\.js:Kampyle
+\\.clicktale\\.net\\/:ClickTale
+clicktale\\.pantherssl\\.com:ClickTale
+\\.crwdcntrl\\.net\\/:Lotame
+adserving\\.cpxinteractive\\.com\\/:CPX Interactive
+adserving\\.cpxadroit\\.com:CPX Interactive
+lypn\\.com\\/lp\\/:Lynchpin Analytics
+revelations\\.trovus\\.co\\.uk\\/tracker\\/:Trovus Revelations
+touchclarity:Omniture TouchClarity
+\\.insightexpressai\\.com\\/:InsightExpress
+\\.kanoodle\\.com\\/:Kanoodle
+(tags\\.bluekai\\.com\\/|bkrtx\\.com\\/js\\/):BlueKai
+(tr-metrics\\.loomia\\.com|assets\\.loomia\\.com\\/js\\/):Loomia
+othersonline\\.com\\/*\\/[a-z0-9]+\\.js:Others Online
+twittercounter\\.com:TwitterCounter
+(\\.dtmpub\\.com\\/|login\\.dotomi\\.com\\/ucm\\/ucmcontroller):Dotomi
+scripts\\.chitika\\.net\\/:Chitika
+ad\\.spot200\\.com\\/:Spot200
+\\.hitslink\\.com\\/:HitsLink
+\\.w3counter\\.com:W3Counter
+awstats_misc_tracker\\.js:AWStats
+stat\\.onestat\\.com\\/:OneStat
+\\.bmmetrix\\.com\\/:Bluemetrix
+include\\.reinvigorate\\.net\\/:Reinvigorate
+api\\.postrank\\.com\\/:PostRank
+service\\.collarity\\.com\\/:Collarity
+\\.smrtlnks\\.com\\/:AdaptiveBlue SmartLinks
+www\\.tumblr\\.com\\/dashboard\\/iframe:Tumblr
+blogrollr\\.com\\/embed\\.js:BlogRollr
+\\.casalemedia\\.com\\/:Casale Media
+track\\.blogcounter\\.de\\/:BlogCounter
+api\\.widgetbucks\\.com\\/script\\/ads\\.js:WidgetBucks
+www\\.nooked\\.com\\/javascripts\\/clearspring\\.js:Nooked
+(\\.mediaplex\\.com|\\.fastclick\\.net)\\/:ValueClick Mediaplex
+(www\\.haloscan\\.com\\/load\\/|js-kit\\.com\\/[0-9a-z\\/]+\\.js):JS-Kit
+buzzster\\.com\\/widget\\/:Buzzster
+(trackalyzer\\.com|formalyzer\\.com):LeadLander
+(\\.burstbeacon\\.com\\/|\\.burstnet\\.com\\/):Burst Media
+\\.metricsdirect\\.com\\/:Zango
+(bspixel\\.bidsystem\\.com\\/|bidsystem\\.adknowledge\\.com\\/):Adknowledge
+\\.nebuadserving\\.com\\/:NebuAd
+\\.media6degrees\\.com\\/:Media6Degrees
+\\/functionalTrends\\.js:FunctionalTrends
+\\.nuconomy\\.com\\/n\\.js:Nuconomy
+(\\.adrevolver\\.com|ads\\.bluelithium\\.com)\\/:Bluelithium
+\\.glam\\.com\\/app\\/site\\/affiliate\\/viewChannelModule\\.act:Glam Media
+storage\\.trafic\\.ro\\/js\\/trafic\\.js:Trafic
+\\.clicktracks\\.com\\/:Lyris ClickTracks
+\\.enquisite\\.com\\/log\\.js:Enquisite
+\\.extreme-dm\\.com\\/:eXTReMe Tracker
+\\.sweepery\\.com\\/javascripts\\/*\\/[0-9a-zA-Z_]*\\.js:Sweepery
+stat\\.netmonitor\\.fi\\/js\\/:NetMonitor
+munchkin\\.marketo\\.net\\/:Marketo
+(api|leads)\\.demandbase\\.com\\/:Demandbase
+pixel\\.fetchback\\.com\\/:Fetchback
+gw-services\\.vtrenz\\.net\\/:Silverpop
+(\\/eluminate\\.js|data\\.cmcore\\.com\\/imp|data\\.coremetrics\\.com):Coremetrics
+www\\.dialogmgr\\.com\\/tag\\/lib\\.js:Magnify360
+tracking\\.fathomseo\\.com\\/:Fathom SEO
+(now\\.eloqua\\.com|elqcfg(xml)?\\.js|elqimg\\.js):Eloqua
+\\.imiclk\\.com\\/:Acerno
+\\.mmismm\\.com\\/:Mindset Media
+rt\\.trafficfacts\\.com\\/:GoDaddy Site Analytics
+\\.adnxs\\.com\\/:AdNexus
+\\.pro-market\\.net\\/:AlmondNet
+\\.exelator\\.com\\/:eXelate
+\\.fimserve\\.com\\/:Fox Audience Network
+\\.interclick\\.com\\/:interclick
+\\.nexac\\.com\\/:NextAction
+\\.trafficmp\\.com\\/:Epic Marketplace
+\\.turn\\.com\\/:Turn
+(\\.realmedia\\.com\\/|realmedia\\/ads\\/|\\.247realmedia\\.com\\/realmedia\\/ads\\/):24/7 Real Media
+(\\.bizographics\\.com\\/|ad\\.bizo\\.com\\/pixel):Bizo
+assets\\.skribit\\.com\\/javascripts\\/SkribitSuggest\\.js:Skribit
+\\.specificclick\\.net\\/:SpecificClick
+(\\.atdmt\\.com\\/|\\.adbureau\\.net\\/):Microsoft Atlas
+code\\.etracker\\.com\\/:etracker
+\\.etracker\\.de\\/:etracker
+\\.(scoreresearch|securestudies|scorecardresearch)\\.com\\/:Comscore Beacon
+\\.snoobi\\.com\\/snoop\\.php:Snoobi
+\\.rfihub\\.com\\/:Rocket Fuel
+\\.shinystat\\.(com|it)\\/:ShinyStat
+(sniff|stats)\\.visistat\\.com\\/:VisiStat
+\\.sitestat\\.com\\/:NedStat
+(\\.tynt\\.com\\/ti\\.js|\\.tynt\\.com\\/javascripts\\/tracer\\.js):Tynt Insight
+\\.i-stats\\.com\\/js\\/icounter\\.js:i-stats
+digg\\.com\\/[0-9a-zA-Z]*\\/diggthis\\.js:DiggThis
+\\.collective-media\\.net\\/:Collective Media
+\\.socialtwist\\.com:Tell-a-Friend
+tracking\\.summitmedia\\.co\\.uk\\/js\\/:Summit Media
+facebook\\.com\\/beacon\\/:Facebook Beacon
+(tracking\\.percentmobile\\.com\\/|\\/percent_mobile\\.js):PercentMobile
+\\.yandex\\.ru\\/(resource|metrika)\\/watch\\.js:Yandex.Metrics
+yandex\\.ru\\/cycounter:Yandex.Metrics
+ad\\.adriver\\.ru\\/:AdRiver
+\\.spylog\\.(com|ru)\\/:Openstat
+\\/phpmyvisites\\.js:phpMyVisites
+\\.alexametrics\\.com\\/:Alexa Metrics
+static\\.zemanta\\.com\\/:Zemanta
+\\.conversiondashboard\\.com\\/:ClickFuel
+vizisense\\.komli\\.net\\/pixel\\.js:ViziSense
+cdn\\.doubleverify\\.com\\/[0-9a-zA-Z_-]*\\.js:DoubleVerify
+one\\.statsit\\.com\\/:Statsit
+\\.leadforce1\\.com\\/bf\\/bf\\.js:LeadForce1
+\\.iperceptions\\.com\\/:iPerceptions
+\\.searchforce\\.net\\/:SearchForce
+\\.zendesk\\.com\\/external\\/zenbox\\/overlay\\.js:Zendesk
+\\.ivwbox\\.de\\/:INFOnline
+(media|recs).richrelevance\\.com\\/:RichRelevance
+\\.google-analytics\\.com\\/siteopt\\.js:Google Website Optimizer
+lt\\.navegg\\.com\\/lt\\.js:Navegg
+\\.adtegrity\\.net\\/:Adtegrity
+widgets\\.backtype\\.com\\/:BackType Widgets
+\\.blvdstatus\\.com\\/js\\/initBlvdJS\\.php:BLVD Status
+widgets\\.clearspring\\.com\\/:ClearSpring
+\\.clixmetrix\\.com\\/:ClixMetrix
+clixpy\\.com\\/clixpy\\.js:Clixpy
+rover\\.ebay\\.com\\/:eBay Stats
+\\.rsvpgenius\\.com\\/:Genius
+\\.kissmetrics\\.com\\/:KissMetrics
+doug1izaerwt3\\.cloudfront\\.net:KissMetrics
+\\/liveball_api\\.js:LiveBall
+counter\\.yadro\\.ru\\/:LiveInternet
+logdy\\.com\\/scripts\\/script\\.js:Logdy
+\\.marinsm\\.com\\/:Marin Search Marketer
+api\\.mixpanel\\.com\\/:MixPanel
+(cid|pi)\\.pardot\\.com\\/:Pardot
+(spruce\\.rapleaf\\.com|\\.rlcdn\\.com):RapLeaf
+\\.inq\\.com\\/:TouchCommerce
+tweetboard\\.com\\/tb\\.js:Tweetboard
+(tweetmeme\\.com\\/i\\/scripts\\/button\\.js|zulu\\.tweetmeme\\.com\\/button_ajax\\.js):TweetMeme
+(\\.unica\\.com\\/|ntpagetag):Unica
+vistrac\\.com\\/static\\/vt\\.js:vistrac
+widgetserver\\.com\\/syndication\\/subscriber:WidgetBox
+tracker\\.wordstream\\.com\\/:WordStream
+js\\.stormiq\\.com/sid[0-9]*_[0-9]*\\.[0-9]*\\.js:DC StormIQ
+\\.histats\\.com\\/:Histats
+(widgets\\.amung\\.us\\/.*\\.js|whos\\.amung\\.us\\/widget\\/):Whos.amung.us
+data\\.gosquared\\.com:GoSquared LiveStats
+d1l6p2sc9645hc\\.cloudfront\\.net:GoSquared LiveStats
+www\\.apture\\.com\\/js\\/apture\\.js:Apture
+c\\.compete\\.com\\/bootstrap\\/.*\\/bootstrap\\.js:CompeteXL
+pixel\\.33across\\.com:33Across
+(s3\\.amazonaws\\.com\\/wingify\\/vis_opt\\.js|dev\\.visualwebsiteoptimizer\\.com\\/deploy\\/js_visitor_settings\\.php.*|server\\.wingify\\.com\\/app\\/js\\/code\\/wg_consolidated\\.js):Visual Website Optimizer
+d5phz18u4wuww\\.cloudfront\\.net:Visual Website Optimizer
+mashlogic\\.com\\/(loader\\.min\\.js|brands\\/embed\\/):MashLogic
+s3\\.buysellads\\.com:BuySellAds
+cim\\.meebo\\.com\\/cim:Meebo Bar
+(c1|beta)\\.web-visor\\.com\\/c\\.js:WebVisor
+stags\\.peer39\\.net\\/:Peer39
+\\.eproof\\.com\\/js\\/.*\\.js:eProof
+(autocontext|o)\\.begun\\.ru\\/:Begun
+foresee-(trigger(.*)?|alive|analytics(.*)?)\\.js:ForeSee
+\\.quintelligence\\.com\\/quint\\.js:Quintelligence
+3dstats\\.com\\/cgi-bin\\/3dstrack(ssl)?\\.cgi:3DStats
+addfreestats\\.com\\/cgi-bin\\/afstrack\\.cgi:AddFreeStats
+(\\.webtrekk\\.net|\\/webtrekk\\.js):Webtrekk
+channelintelligence\\.com\\/:Channel Intelligence
+ads\\.doclix\\.com\\/adserver\\/serve\\/:AdSide
+bdv\\.bidvertiser\\.com\\/:BidVertiser
+view\\.binlayer\\.com\\/ad:BinLayer
+get\\.mirando\\.de\\/:Mirando
+ads\\.adtiger\\.de\\/:AdTiger
+js\\.adscale\\.de\\/:AdScale
+(js|tag)\\.admeld\\.com:AdMeld
+dsa\\.csdata1\\.com:ClearSaleing
+cdn\\.wibiya\\.com\\/(toolbars|loaders):Wibiya Toolbar
+\\/adam\\/(cm8[0-9a-z_]+\\.js|detect):CheckM8
+www\\.actonsoftware\\.com\\/acton\\/bn\\/:Act-On Beacon
+(\\.res-x\\.com\\/ws\\/r2\\/resonance|\\/resxclsa\\.js):Resonance
+(\\/gomez.+?\\.js|\\.[rt]\\.axf8\\.net\\/):Gomez
+(cdn\\.mercent\\.com\\/js\\/tracker\\.js|link\\.mercent\\.com\\/):Mercent
+(\\.content\\.ru4\\.com\\/images\\/|\\.edge\\.ru4\\.com\\/smartserve\\/|\\.xp1\\.ru4\\.com\\/|ad\\.xplusone\\.com\\/|\\/xplus1\\/xp1\\.js):[x+1]
+www\\.googleadservices\\.com\\/pagead\\/conversion:Google AdWords Conversion
+s\\.clickability\\.com\\/s:Clickability Beacon
+(xslt\\.alexa\\.com\\/site_stats\\/js\\/s\\/|widgets\\.alexa\\.com\\/traffic\\/javascript\\/):Alexa Widget
+ad\\.retargeter\\.com/seg:ReTargeter Beacon
+tags\\.mediaforge\\.com\\/if\\/[0-9]+:mediaFORGE
+\\.visualdna\\.com\\/:VisualDNA
+\\.visualdna-stats\\.com\\/:VisualDNA
+tracking\\.searchmarketing\\.com\\/:ChannelAdvisor
+saas\\.intelligencefocus\\.com\\/sensor\\/:IntelligenceFocus
+www\\.domodomain\\.com\\/domodomain\\/sensor\\/:DomoDomain
+\\.optimost\\.com\\/:Optimost
+\\/(html|image|js)\\.ng\\/:DoubleClick DART
+t\\.p\\.mybuys\\.com\\/js\\/mybuys3\\.js:MyBuys
+track\\.roiservice\\.com\\/track\\/:Atlas ProfitBuilder
+(bh|tag|ds)\\.contextweb\\.com:ContextWeb
+\\.dmtracker\\.com\\/:DemandMedia
+cdn\\.triggertag\\.gorillanation\\.com\\/js\\/triggertag\\.js:Gorilla Nation
+nr7\\.us\\/apps\\/:Net-Results
+searchignite\\.com\\/si\\/cm\\/tracking\\/:SearchIgnite
+\\.wa\\.marketingsolutions\\.yahoo\\.com\\/script\\/scriptservlet:Yahoo Search Marketing Analytics
+\\.doubleclick\\.net\\/activityi:DoubleClick Floodlight
+fls\\.doubleclick\\.net:DoubleClick Floodlight
+prof\\.estat\\.com\\/js\\/:eStat
+(adstat\\.4u\\.pl\\/s\\.js|stat\\.4u\\.pl\\/cgi-bin\\/):stat4u
+\\.hit\\.gemius\\.pl:Gemius
+\\/xgemius\\.js:Gemius
+jlinks\\.industrybrains\\.com\\/jsct:Adhere
+\\/z(i|a)g\\.(js|gif):ZigZag
+bs\\.serving-sys\\.com\\/burstingpipe\\/(activityserver|adserver)\\.bs:MediaMind
+img\\.pulsemgr\\.com:Permuto
+segment-pixel\\.invitemedia\\.com:Invite Media
+assets\\.newsinc\\.com\\/(ndn\\.2\\.js|analyticsprovider\\.svc\\/):NDN Analytics
+\\.predictad\\.com\\/scripts\\/(molosky|publishers)\\/:PredictAd
+\\.netshelter\\.net:NetShelter
+\\.iesnare\\.com:ReputationManager
+\\.(brcdn|brsrvr)\\.com\\/:BloomReach
+(beacon|js)\\.clickequations\\.net:ClickEquations
+mct\\.rkdms\\.com\\/sid\\.gif:RKG Attribution Management
+server[2-4]\\.web-stat\\.com:Web-Stat
+\\/internal\\/jscript\\/dwanalytics\\.js:Demandware Analytics
+a\\.giantrealm\\.com:Giant Realm
+tags\\.dashboardad\\.net:Dashboard Ad
+\\.oewabox\\.at:OWA
+\\.amgdgt\\.com\\/(ads|base)\\/:Adconion
+(ads|image2)\\.pubmatic\\.com\\/adserver\\/:PubMatic
+ad\\.fed\\.adecn\\.com:AdECN
+adelixir\\.com\\/(webpages\\/scripts\\/ne_roi_tracking\\.js|neroitrack):LXR100
+keywordmax\\.com\\/tracking\\/:KeywordMax
+amadesa\\.com\\/static\\/client_js\\/engine\\/amadesajs\\.js:Amadesa
+\\.srtk\\.net\\/www\\/delivery\\/:SearchRev
+(tns-counter\\.ru|tns-counter\\.js|\\.tns-cs\\.net|statistik-gallup\\.net|\\.sesamestats\\.com):TNS
+[a|c]\\.adroll\\.com:AdRoll
+hints\\.netflame\\.cc\\/service\\/script\\/:Fireclick
+\\.tynt\\.com\\/ts\\.js:Tynt SpeedSearch
+ad\\.xtendmedia\\.com:XTEND
+newstogram\\.com\\/(.*)\\/(histogram|toolbar)\\.js:Newstogram
+ad\\.adlegend\\.com:TruEffect
+a\\.mouseflow\\.com:Mouseflow
+(rotator\\.adjuggler\\.com|\\/banners\\/ajtg\\.js|\\/servlet\\/ajrotator\\/):AdJuggler
+picadmedia\\.com\\/js\\/:Image Space Media
+(m|js|api|cdn)\\.viglink\\.com:VigLink
+sageanalyst\\.net:SageMetrics
+svlu\\.net:SeeVolution
+w55c\\.net:DataXu
+(cdn|crosspixel)\\.demdex\\.net:Demdex
+adserver\\.(adtechus\\.com|adtech\\.de):ADTECH
+\\.r\\.msn\\.com\\/scripts\\/microsoft_adcenterconversion\\.js:Microsoft adCenter Conversion
+(dw|adlog)\\.com\\.com\\/:CBS Interactive
+netmng\\.com\\/:Netmining
+px\\.owneriq\\.net:OwnerIQ
+app\\.insightgrit\\.com\\/1\\/:Zeta Search
+ads\\.bridgetrack\\.com\\/:BridgeTrack
+\\.bridgetrack\\.com\\/track:BridgeTrack
+\\.bridgetrack\\.com\\/a\\/s\\/:BridgeTrack
+hits\\.convergetrack\\.com\\/:ConvergeTrack
+(\\.dt07\\.net|mg\\.dt00\\.net\\/(u)?js):MarketGid
+(publishers|\\.hat)\\.halogennetwork\\.com\\/:Halogen Network
+app\\.phonalytics\\.com\\/track:Phonalytics
+cn\\.clickable\\.net\\/js\\/cct\\.js:Clickable
+s0b?\\.bluestreak\\.com\\/ix\\.e:BlueStreak
+tracking\\.dsmmadvantage\\.com\\/clients\\/:DSMM Advantage
+(cdn\\.nprove\\.com\\/npcore\\.js|go\\.cpmadvisors\\.com\\/):XA.net
+\\.intermundomedia\\.com\\/:InterMundo Media
+vtracker\\.com\\/(counter|stats|tr\\.x|ts|tss|mvlive|digits):MindViz Tracker
+(scripts|tm)\\.verticalacuity\\.com\\/vat\\/mon\\/vt\\.js:Vertical Acuity
+(impression|ca)\\.clickinc\\.com\\/:ClickInc
+\\.skimresources\\.com\\/js:SkimLinks
+\\.skimlinks\\.com\\/(api|js)\\/:SkimLinks
+ad\\.metanetwork\\.com\\/:Meta Network
+rt\\.legolas-media\\.com\\/:Legolas Media
+cdn\\.krxd\\.net\\/krux\\.js:Krux Digital
+(clickserve\\.cc-dt\\.com\\/link\\/|gan\\.doubleclick\\.net\\/gan):Google Affiliate Network
+\\.fwmrm\\.net\\/(ad|g)\\/:FreeWheel
+\\.ibpxl\\.com\\/:InternetBrands
+pmetrics\\.performancing\\.com\\/(js|in\\.php|[0-9]*\\.js):Performancing Metrics
+(tracking\\.conversionlab\\.it|conversionlab\\.trackset\\.com\\/track\\/):Trackset ConversionLab
+visualpath[0-9]\\.trackset\\.it\\/:Trackset VisualPath
+\\.adblade\\.com\\/:Adblade
+ads\\.undertone\\.com:Undertone Networks
+cdn\\.undertone\\.com\\/js\\/ajs\\.js:Undertone Networks
+ads\\.lucidmedia\\.com\\/clicksense\\/pixel:Lucid Media
+track\\.did-it\\.com\\/:Didit Maestro
+tag\\.didit\\.com\\/(didit|js)\\/:Didit Blizzard
+(content|track)\\.pulse360\\.com\\/:Pulse360
+\\.adgear\\.com\\/:AdGear
+j\\.clickdensity\\.com\\/cr\\.js:ClickDensity
+visitorville\\.com\\/js\\/plgtrafic\\.js\\.php:VisitorVille
+ads\\.affbuzzads\\.com\\/:AffiliateBuzz
+cts\\.vresp\\.com\\/s\\.gif:VerticalResponse
+\\.linksynergy\\.com:LinkShare
+websitealive[0-9]\\.com\\/:AliveChat
+b\\.monetate\\.net\\/js\\/:Monetate
+(adserver|int)\\.teracent\\.net\\/:Teracent
+html\\.aggregateknowledge\\.com\\/iframe:Aggregate Knowledge
+\\.tellapart\\.com\\/crumb:TellApart
+vitamine\\.networldmedia\\.net\\/bts\\/:BV! Media
+projectwonderful\\.com/(\\ad_display\\.js|gen\\.php):Project Wonderful
+voicefive\\.com\\/.*\\.pli:VoiceFive
+(econda.*\\.js|www\\.econda-monitor\\.de\\/els\\/logging):Econda
+adspeed\\.(com|net)\\/ad\\.php:AdSpeed
+live1\\.netupdater\\.info\\/live\\.php:NetUpdater
+netupdater[0-9]\\.de:NetUpdater
+\\/netupdater(_live)?:NetUpdater
+\\.ic-live\\.com\\/(goat\\.php|[0-9][0-9][0-9][0-9]\\.js):iCrossing
+adreadytractions\\.com\\/rt\\/:AdReady
+(adcode|conv)\\.adengage\\.com:AdEngage
+server\\.cpmstar\\.com:CPMStar
+tracker\\.financialcontent\\.com\\/:Financial Content
+www\\.csm-secure\\.com\\/scripts\\/clicktracking\\.js:ClearSearch
+sitecompass\\.com\\/(sc_cap\\/|[ij]pixel):Site Compass
+link\\.ixs1\\.net\\/s\\/at:eWayDirect
+upsellit\\.com\\/:UpSellit
+accelerator-media\\.com\\/pixel:Accelerator Media
+(haku|puma|cheetah)\\.vizu\\.com:Vizu
+\\.adfox\\.ru\\/preparecode:AdFox
+(goku\\.brightcove\\.com|admin\\.brightcove\\.com\\/js):Brightcove
+ats\\.tumri\\.net:Tumri
+\\.mathtag\\.com:MediaMath
+(ad|ad2|counter)\\.rambler\\.ru:Rambler
+\\.mail\\.ru\\/counter:Rambler
+\\.list\\.ru\\/counter:Rambler
+lookup\\.bluecava\\.com:BlueCava
+monitus(_tools)?\\.js:Monitus
+(l|b)ive\\.monitus\\.net:Monitus
+service\\.optify\\.net\\/:Optify
+ad\\.reduxmedia\\.com\\/:Redux Media
+(servedby|geo)\\.precisionclick\\.com\\/:PrecisionClick
+counters\\.gigya\\.com:Gigya Beacon
+\\.gigya\\.com\\/js\\/socialize\\.js:Gigya Beacon
+webiqonline\\.com:Usability Sciences WebIQ
+radar\\.cedexis\\.(com|net):Cedexis Radar
+as00\\.estara\\.com\\/as\\/initiatecall2\\.php:ATG Optimization
+\\.atgsvcs\\.com\\/js\\/atgsvcs\\.js:ATG Recommendations
+\\.mookie1\\.com:Media Innovation Group
+stats\\.businessol\\.com:BusinessOnLine Analytics
+webtraxs\\.(js|com):Web Traxs
+pixel\\.adbuyer\\.com:AdBuyer.com
+adadvisor\\.net:TargusInfo
+vertster.com\\/.*\\/vswap\\.js:Vertster
+voice2page\\.com\\/naa_1x1\\.js:InternetAudioAds
+ad\\.z5x\\.net:DSNR Media Group
+data\\.resultlinks\\.com:Result Links
+eyewonder\\.com\\/:EyeWonder
+ad(media)?\\.wsod\\.com:Wall Street on Demand
+\\.visiblemeasures\\.com\\/log:Visible Measures
+fx\\.gtop(stats\\.com|\\.ro)\\/js\\/gtop\\.js:GTop
+adsfac\\.(eu|us|sg|net):Facilitate Digital
+pixazza\\.com\\/(static\\/)?widget:Pixazza
+(qnsr\\.com|thecounter\\.com\\/id):Quinn Street
+(smp|leads)\\.specificmedia\\.com:Specific Media
+adviva\\.net:Specific Media
+gmads\\.net:GroupM Server
+levexis\\.com:TagMan
+(mmcore\\.js|cg-global\\.maxymiser\\.com):Maxymiser
+nexus\\.ensighten\\.com:Ensighten
+uptrends\\.com\\/(aspx\\/uptime\\.aspx|images\\/uptrends\\.gif):Uptrends
+visitstreamer\\.com\\/vs\\.js:Visit Streamer
+crm-metrix\\.com:crmmetrix
+customerconversio\\.com:crmmetrix
+utd\\.stratigent\\.com:Stratigent
+facebook\\.com\\/(plugins|widgets)\\/.*\\.php:Facebook Social Plugins
+badge\\.facebook\\.com:Facebook Social Plugins
+fbcdn\\.net\\/connect\\.php\\/js\\/fb\\.share:Facebook Social Plugins
+\\.chango\\.(ca|com):Chango
+cdna\\.tremormedia\\.com:Tremor Media
+objects\\.tremormedia\\.com\\/embed\\/js:Tremor Media
+admonkey\\.dapper\\.net:Dapper
+p-td\\.com:Accuen Media
+yieldoptimizer\\.com:Adara Media
+displaymarketplace\\.com:Datran
+ads\\.addynamix\\.com\\/category:Ybrant Media
+ad\\.adserverplus\\.com:Ybrant Media
+(dd|ff)\\.connextra\\.com:Connextra
+(api|apps)\\.conduit\\.com:Conduit
+conduit-banners\\.com:Conduit
+udmserve\\.net:Underdog Media
+pixel\\.adpredictive\\.com:AdPredictive
+px\\.steelhousemedia\\.com:Steel House Media
+tracking\\.godatafeed\\.com:GoDataFeed
+\\.trumba\\.com\\/scripts\\/spuds\\.js:Trumba
+adspaces\\.ero-advertising\\.com:EroAdvertising
+ads\\.adxpansion\\.com:AdXpansion
+clarity\\.adinsight\\.eu\\/static\\/adinsight:AdInsight Clarity
+\\/performable\\/pax:Performable
+snapabug\\.appspot\\.com\\/snapabug:SnapEngage
+breathe\\.c3metrics\\.com:C3 Metrics
+um\\.simpli\\.fi\\/ab_match:Simpli.fi
+dt\\.admission\\.net\\/retargeting\\/displaytracker\\.js:Cobalt Group
+yumenetworks\\.com\\/dynamic:YuMe
+trk\\.vindicosuite\\.com\\/Tracking\\/:Vindico Group
+creativeby2\\.unicast\\.com\\/(assets|script2):Unicast
+(hs|sw)\\.interpolls\\.com:Interpolls
+rs\\.gwallet\\.com\\/r1\\/pixel:RadiumOne
+wtp101\\.com\\/:Adnetik
+\\.adshuffle\\.com\\/:AdShuffle
+(servedby|stat|cdn|a)\\.flashtalking\\.com\\/:Flashtalking
+(servedby|ads|event)\\.adxpose\\.com:AdXpose
+adcentriconline\\.com:AdCentric
+segs\\.btrll\\.com\\/v[0-9]\\/tpix\\/:BrightRoll
+\\.smartadserver\\.com:SMART AdServer
+spotxchange\\.com\\/track:SpotXchange
+mi\\.adinterax\\.com\\/(js|customer):AdInterax
+utag\\.loader\\.js:Tealium
+(us\\.img|ads)\\.e-planning\\.net:e-planning
+choices\\.truste\\.com\\/ca:TRUSTe Notice
+choicesj\\.truste\\.com\\/ca:TRUSTe Notice
+btstatic\\.com:BrightTag
+s\\.thebrighttag\\.com:BrightTag
+tldadserv\\.com\\/impopup\\.php:TLDAdserv
+wiredminds\\.de\\/track:WiredMinds
+p\\.brilig\\.com\\/contact\\/bct:Brilig
+xcdn\\.xgraph\\.net\\/([0-9]|partner\\.js):XGraph
+cdn\\.doubleverify\\.com\\/oba:DoubleVerify Notice
+beencounter\\.com\\/b\\.js:Beencounter
+traveladvertising\\.com\\/live\\/tan:Travel Ad Network
+everestjs\\.net|pixel([0-9]*)?\\.everesttech\\.net:Efficient Frontier
+ctasnet\\.com:Crimtan
+raasnet\\.com:Red Aril
+eyereturn\\.com:eyeReturn Marketing
+rainbow\\.mythings\\.com:My Things Media
+esm1\\.net:Think Realtime
+domdex\\.(net|com):Magnetic
+qjex\\.net:Magnetic
+adconnexa\\.com:OxaMedia
+\\.spongecell\\.com\\/:Spongecell
+\\.tradedoubler\\.com:TradeDoubler
+effectivemeasure\\.net:Effective Measure
+ads\\.brand\\.net:Brand.net
+surveybuilder\\.buzzlogic\\.com:BuzzLogic
+adserver\\.veruta\\.com:Veruta
+veruta\\.com\\/scripts\\/trackmerchant\\.js:Veruta
+((p(shared|files|thumbnails))|embed)\\.5min\\.com\\/:5min Media
+stat\\.yellowtracker\\.com:YellowTracker
+\\.backbeatmedia\\.com:Back Beat Media
+(amconf|core|adcontent)\\.videoegg\\.com\\/(siteconf|eap|alternates|ads)\\/:Say Media
+contaxe\\.com\\/go:Conteaxe
+ad\\.zanox\\.com:Zanox
+zbox\\.zanox\\.com:Zanox
+www\\.zanox-affiliate\\.de\\/ppv\\/:Zanox
+rts\\.sparkstudios\\.com\\/:Spark Studios
+adserver\\.juicyads\\.com:JuicyAds
+ads\\.pheedo\\.com:Pheedo
+www\\.cbox\\.ws\\/box:Cbox
+ads\\.ad4game\\.com:ad4game
+a\\.ucoz\\.net:uCoz
+(do\\.am|at\\.ua)\\/stat\\/:uCoz
+ucoz\\.(.*)\\/(stat\\/|main\\/\\?a=ustat):uCoz
+c\\.bigmir\\.net:bigmir
+\\.tradetracker\\.net:TradeTracker
+tqlkg\\.com\\/image:Commission Junction
+qksz\\.net:Commission Junction
+ftjcfx\\.com:Commission Junction
+tqlkg\\.com:Commission Junction
+yceml\\.net:Commission Junction
+js\\.geoads\\.com:GeoAds
+certifica\\.js:Certifica Metric
+certifica-js14\\.js:Certifica Metric
+hits\\.e\\.cl:Certifica Metric
+prima\\.certifica\\.com:Certifica Metric
+ads\\.traffiq\\.com:Traffiq
+livepass\\.conviva\\.com:Conviva
+cadreon\\.com\\/tags\\/defaultads:Cadreon
+d1qpxk1wfeh8v1\\.cloudfront\\.net:Cadreon
+184\\.73\\.199\\.28\\/tracker\\/event:SkyTide Anlaytics
+a\\.akncdn\\.com:AdKeeper
+c\\.betrad\\.com\\/geo\\/ba\\.js:Evidon Notice
+beacon\\.dedicatednetworks\\.com:Dedicated Networks
+ads\\.dedicatedmedia\\.com:Dedicated Media
+anormal-tracker\\.de\\/tracker\\.js:Anormal Tracker
+anormal-tracker\\.de\\/countv2\\.php:Anormal Tracker
+roia\\.biz\\/:TrackingSoft
+(ads|sync)\\.(adaptv|tidaltv)\\.(tv|com):Adap.tv
+specificmedia\\.com\\/otherassets\\/ad_options_icon\\.png:Specific Media Notice
+\\.keewurd\\.com\\/:Peerset
+rt\\.liftdna\\.com:LiftDNA
+paid-to-promote\\.net\\/images\\/ptp\\.gif:Paid-To-Promote
+777seo\\.com\\/:Paid-To-Promote
+\\.adsrvr\\.org:TradeDesk
+hurra\\.com\\/ostracker\\.js:Hurra Tracker
+sp1\\.convertro\\.com:Convertro
+d1ivexoxmp59q7\\.cloudfront\\.net:Convertro
+ad\\.adperium\\.com:AdPerium
+adlily\\.adperium\\.com:AdPerium
+\\.adperium\\.com\\/js\\/adframe\\.js:AdPerium
+\\.adperium\\.com\\/abd\\.php:AdPerium
+tags\\.nabbr\\.com:Nabbr
+\\.dmtry\\.com:Adometry
+\\/ki\\.js\\/:KissInsights
+j\\.kissinsights\\.com:KissInsights
+cdn\\.optimizely\\.com\\/js\\/:Optimizely
+webgozar\\.ir\\/c\\.aspx:WebGozar
+webgozar\\.com\\/counter:WebGozar
+r\\.i\\.ua:i.ua
+hotlog\\.ru\\/cgi-bin\\/hotlog:HotLog
+cn01\\.dwstat\\.cn:dwstat.cn
+(gopjn|pjatr|pjtra|pntra|pntrac|pntrs)\\.com\\/:Pepperjam
+analytics\\.matchbin\\.com:Matchbin
+ads\\.matchbin\\.com:Matchbin
+shareasale\\.com:ShareASale
+pages\\.etology\\.com\\/:Etology
+ads2?\\.smowtion\\.com:Smowtion
+imgsrv\\.nextag\\.com\\/imagefiles\\/includes\\/roitrack\\.js:Nextag ROI Optimizer
+pixel\\.adsafeprotected\\.com:AdSafe
+fw\\.adsafeprotected\\.com:AdSafe
+\\.streamray\\.com:FriendFinder Network
+\\.pop6\\.com:FriendFinder Network
+\\.cams\\.com:FriendFinder Network
+\\.nostringsattached\\.com:FriendFinder Network
+\\.getiton\\.com:FriendFinder Network
+\\.adultfriendfinder\\.com:FriendFinder Network
+\\.double-check\\.com:FriendFinder Network
+\\.facebookofsex\\.com:FriendFinder Network
+\\.amigos\\.com:FriendFinder Network
+cdn\\.technoratimedia\\.com:Technorati Media
+\\.sponsorads\\.de:SponsorAds.de
+adserver\\.advertisespace\\.com:AdvertiseSpace
+ads\\.advertisespace\\.com:AdvertiseSpace
+dinclinx\\.com:Madison Logic
+platform\\.twitter\\.com\\/widgets:Twitter Button
+sitebro\\.net\\/track\\.js:SiteBro
+static\\.polldaddy\\.com\\/p:Polldaddy
+contextlinks\\.netseer\\.com:NetSeer
+\\.adform\\.net:AdForm
+ads\\.newtention\\.net:Newtention
+trk\\.newtention\\.net:Newtention
+eplayer\\.clipsyndicate\\.com\\/:Clip Syndicate
+\\.adition\\.com:Adition
+ad\\.clickotmedia\\.com:Adorika
+d1ros97qkrwjf5\\.cloudfront\\.net:New Relic
+apis\\.google\\.com\\/js\\/plusone\\.js:Google +1
+srv\\.clickfuse\\.com:ToneFuse
+\\.opentracker\\.net:Opentracker
+(img|script)\\.footprintlive\\.com:Footprint
+adreactor\\.com:AdReactor
+adocean\\.pl:AdOcean
+waterfrontmedia\\.com:Everyday Health
+\\.meteorsolutions\\.com\\/:Meteor Solutions
+freeonlineusers\\.com\\/:Free Online Users
+\\.statistics\\.ro\\/:statistics.ro
+\\.keymetric\\.net\\/:KeyMetric
+\\.advertserve\\.com\\/:AdvertServe
+\\.successfultogether\\.co\\.uk\\/:Affili.net
+d3pkntwtp2ukl5\\.cloudfront\\.net\\/:Unbounce
+t\\.unbounce\\.com\\/:Unbounce
+zopim\\.com\\/:Zopim
+ads\\.brainient\\.com\\/:Brainient
+ad\\.103092804\\.com\\/:Kitara Media
+\\.trafficrevenue\\.net\\/:Traffic Revenue
+\\.adbull\\.com\\/:AdBull
+\\.complexmedianetwork\\.com\\/:Complex Media Network
+\\.complex\\.com\\/:Complex Media Network
+pocketcents\\.com\\/:PocketCents
+\\/hellobar\\.js:Hello Bar
+\\.ppctracking\\.net:Direct Response Group
+expo-max\\.com:expo-MAX
+hitsniffer\\.com\\/:HitSniffer
+\\.impressiondesk\\.com\\/:Infectious Media
+\\.atemda\\.com:AdMeta
+\\/std\\/resource\\/script\\/rwts\\.js:RightWave
+\\.springmetrics\\.com:Spring Metrics
+d3rmnwi2tssrfx\\.cloudfront\\.net:Spring Metrics
+\\.activeconversion\\.com:ActiveConversion
+\\.linkconnector\\.com:LinkConnector
+\\.admedia\\.com:AdMedia
+prosperent\\.com:Prosperent
+\\.exitjunction\\.com:ExitJunction
+\\.dynamicoxygen\\.com:ExitJunction
+wwa\\.wipe\\.de:Wipe Web Anlaytics
+\\.tinystat\\.(ir|com):Tinystat
+\\.netbina\\.com:NetBina
+radarurl\\.com:RadarURL
+\\.olark\\.com:Olark
+\\.parsely\\.com:Parse.ly
+\\.persianstat\\.com:PersianStat
+\\.lytiks\\.com:Lytiks
+\\.nuffnang\\.com:Nuffnang
+\\.pricegrabber\\.com\\/conversion\\.php:PriceGrabber
+\\.tailsweep\\.com:Tailsweep
+scribol\\.com:Scribol
+\\.indieclick\\.com:IndieClick
+cdn\\.topsy\\.com:Topsy
+\\.investingchannel\\.com:InvestingChannel
+wahoha\\.com:Wahoha
+theblogfrog\\.com:BlogFrog
+pt\\.peerius\\.com:Peerius
+\\.w3roi\\.com:w3roi
+yandex\\.st\\/share\\/:Yandex.API
+2leep\\.com:2leep
+nwidget\\.networkedblogs\\.com:NetworkedBlogs
+ads\\.adonion\\.com:AdOnion
+sa\\.entireweb\\.com\\/sense\\.js:SpeedyAds
+userapi\\.com\\/js\\/api\\/:VKontakte Widgets
+\\.durasite\\.net:DuraSite
+\\.carbonads\\.com:Carbon Ads
+\\.advg\\.jp:AdPlan
+\\.adplan-ds\\.com:AdPlan
+c\\.p-advg\\.com:AdPlan
+\\.adplan\\.ne\\.jp\\/cgi-bin\\/ad\\/se:AdPlan
+\\.unanimis\\.co\\.uk:Unanimis
+\\.adjug\\.com:AdJug
