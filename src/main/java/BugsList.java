@@ -5,11 +5,10 @@ import com.google.common.base.Joiner;
 
 public class BugsList {
 
-    Pattern motherPattern;
-    final Map<Pattern, String> bugPatterns = new HashMap<Pattern, String>();
+    private Pattern motherPattern;
+    private final Map<Pattern, String> bugPatterns = new HashMap<Pattern, String>();
 
     public BugsList(String fileLocation) {
-
         initialisePatterns(fileLocation);
     }
 
@@ -37,5 +36,25 @@ public class BugsList {
 
         String motherRegex = Joiner.on("|").join(allRegexesList);
         motherPattern = Pattern.compile(motherRegex);
+    }
+
+    public String getBugNameForString(String pattern) {
+        String namedBug = null;
+        for(Map.Entry<Pattern, String> e: bugPatterns.entrySet()) {
+          Pattern p = e.getKey();
+            if(p.matcher(pattern).matches()) {
+                namedBug = e.getValue();
+                break;
+            }
+        }
+        return namedBug;
+    }
+
+    public int getnumberOfBugs() {
+        return bugPatterns.size();
+    }
+
+    public boolean hasMatchingPatterns(String url) {
+        return motherPattern.matcher(url).matches();
     }
 }
