@@ -1,15 +1,9 @@
-import org.junit.Assert;
 import org.junit.Test;
 
-import java.io.File;
-import java.util.*;
-import java.util.regex.Pattern;
-import java.util.regex.PatternSyntaxException;
+import java.util.Arrays;
+import java.util.List;
 
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertNull;
-import static junit.framework.Assert.assertTrue;
-import static org.junit.Assert.assertSame;
+import static junit.framework.Assert.*;
 
 public class BugsListTests {
 
@@ -17,9 +11,7 @@ public class BugsListTests {
 
     @Test
     public void testBugListLoadedFromBugFile() {
-
         assertEquals(743, list.getnumberOfBugs());
-
     }
     
     @Test
@@ -32,8 +24,6 @@ public class BugsListTests {
                 "webtraxs.js",
                 ".adjug.com"
         );
-
-
 
         for (String url : urls) {
             assertTrue(list.hasMatchingPatterns(url));
@@ -55,8 +45,5 @@ public class BugsListTests {
         assertNull(list.getBugNameForString(""));
         assertNull(list.getBugNameForString("/sgfsd.js"));
     }
-
-
-
 
 }

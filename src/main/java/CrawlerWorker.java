@@ -12,7 +12,7 @@ public class CrawlerWorker implements Runnable {
 
     }
 
-    void crawlSite(String url) {
+    private void crawlSite(String url) {
 
     }
 }
