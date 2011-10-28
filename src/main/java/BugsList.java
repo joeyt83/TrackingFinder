@@ -17,7 +17,6 @@ public class BugsList {
         try { fstream = new FileInputStream(fileLocation); } catch (FileNotFoundException e) {}
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(new DataInputStream(fstream)));
-
         List<String> allRegexesList = new ArrayList<String>();
 
         String bugLine;
