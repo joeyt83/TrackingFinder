@@ -53,7 +53,7 @@ public class BugsList {
         return bugPatterns.size();
     }
 
-    public boolean hasMatchingPatterns(String url) {
-        return motherPattern.matcher(url).matches();
+    public boolean hasMatchingPatterns(String resource) {
+        return motherPattern.matcher(resource).matches();
     }
 }
