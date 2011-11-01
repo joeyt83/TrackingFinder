@@ -8,6 +8,7 @@ import java.util.List;
 public class ResultsWriter {
 
     BufferedWriter writer;
+    private final Object lock = new Object();
 
     public ResultsWriter(String fileLocation) {
         try {
@@ -22,9 +23,21 @@ public class ResultsWriter {
         resultsLine += Joiner.on(",").join(bugsFound);
         resultsLine += "]";
 
+        writeResultsToFile(resultsLine);
+    }
+
+    void registerFailedCrawl(String url) {
+        String resultsLine = url + ":CRAWL FAILED";
+        writeResultsToFile(resultsLine);
+
+    }
+
+     private void writeResultsToFile(String resultsLine) {
         try {
-            writer.write(resultsLine + "\n");
-            writer.flush();
+            synchronized (lock) {
+                writer.write(resultsLine + "\n");
+                writer.flush();
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }

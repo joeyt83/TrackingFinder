@@ -8,7 +8,7 @@ import java.util.List;
 
 public class CrawlerWorker implements Runnable {
 
-    static final List<String> watchedPageElements = Arrays.asList("img", "script", "iframe");
+    static final List<String> watchedPageElements = Arrays.asList("img", "script", "iframe", "embed", "object");
 
     UrlQueue queue;
     ResultsWriter resultsWriter;
@@ -24,34 +24,62 @@ public class CrawlerWorker implements Runnable {
 
     public void run() {
         String url = null;
-        while((url = queue.getNextUrl()) != null) {
+        while ((url = queue.getNextUrl()) != null) {
             crawlSite(url);
         }
+        System.out.println("Thread finishing " + Thread.currentThread().getName());
+
     }
 
     void crawlSite(String domain) {
 
+        Document html = null;
+
+//        long time1 = System.currentTimeMillis();
+
         try {
-            Document html = fetcher.getHtml("http://" + domain);
+            html = fetcher.getHtml("http://www." + domain);
+        } catch (IOException e) {
+        }
 
-            List<Element> watchedElements = new ArrayList<Element>();
-
-            for(String tagName : watchedPageElements) {
-                List<Element> els = html.getElementsByTag(tagName);
-                watchedElements.addAll(els);
+        if (html == null) {
+            try {
+                html = fetcher.getHtml("http://" + domain);
+            } catch (IOException e) {
+                resultsWriter.registerFailedCrawl(domain);
+                return;
             }
+        }
 
-            ArrayList<String> bugsFound = new ArrayList<String>();
-            for(Element el : watchedElements) {
-                String source = el.attr("src");
-                if(bugsList.hasMatchingPatterns(source)) {
-                    bugsFound.add(bugsList.getBugNameForString(source));
+//        long time2 = System.currentTimeMillis();
+
+
+        List<Element> watchedElements = new ArrayList<Element>();
+
+        for (String tagName : watchedPageElements) {
+            List<Element> els = html.getElementsByTag(tagName);
+            watchedElements.addAll(els);
+        }
+
+        ArrayList<String> bugsFound = new ArrayList<String>();
+        for (Element el : watchedElements) {
+            String source = el.attr("src");
+            boolean isLocalImage = (el.tagName() == "img" && !source.startsWith("http"));
+            if (source != "" && !isLocalImage) {
+                if (bugsList.hasMatchingPatterns(source)) {
+                    String bugName = bugsList.getBugNameForString(source);
+                    if (!(bugsFound.contains(bugName))) {
+                        bugsFound.add(bugName);
+                    }
                 }
             }
-            resultsWriter.registerSuccessfulCrawl(domain, bugsFound);
-        } catch (IOException e) {
-            queue.returnUrl(domain);
         }
+//        long time3 = System.currentTimeMillis();
+        resultsWriter.registerSuccessfulCrawl(domain, bugsFound);
+
+//        System.out.println("getTime = " + (time2 - time1));
+//        System.out.println("calculateTime = " + (time3 - time2) + " for " + watchedElements.size() + "els");
+
 
     }
 }

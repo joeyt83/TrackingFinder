@@ -32,6 +32,21 @@ public class BugsListTests {
     }
 
     @Test
+    public void testPartialMatchesAreCounted() {
+
+        List<String> urls = Arrays.asList(
+                "indextools.js?asdkajsdkj",
+                "static.scribefire.com/ads.js?x=yz",
+                "hits.convergetrack.com/something"
+        );
+
+        for (String url : urls) {
+            assertTrue(list.hasMatchingPatterns(url));
+        }
+
+    }
+
+    @Test
     public void testBugPatternsReturnCorrectNameForKnownPattern() {
 
         assertEquals("WebTrends", list.getBugNameForString("m.webtrends.com"));

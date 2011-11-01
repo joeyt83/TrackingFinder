@@ -13,3 +13,15 @@ dependencies {
     testCompile group: 'org.spockframework', name: 'spock-core', version: '0.5-groovy-1.7'
     testCompile group: 'org.gmock', name: 'gmock', version: '0.8.1'
 }
+
+jar {
+    version = '1.0'
+    manifest {
+        attributes 'Main-Class': 'Spider', 'Implementation-Version': version
+    }
+}
+
+task(run, dependsOn: 'classes', type: JavaExec) {
+    main = 'Spider'
+    classpath = sourceSets.main.runtimeClasspath
+}

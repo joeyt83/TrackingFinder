@@ -30,4 +30,21 @@ class ResultsWriterSpec extends Specification {
             [google: [], yahoo: ['coreMetrics', 'clickTracks']] | 'google:[]\nyahoo:[coreMetrics,clickTracks]\n'
 
     }
+
+    def 'results writer writes errors'() {
+
+        given:
+            ResultsWriter resultsWriter = new ResultsWriter(fileLocation)
+
+        when:
+            resultsWriter.registerFailedCrawl(url)
+
+        then:
+            new File(fileLocation).text == expectedFileContents
+
+        where:
+            url      | expectedFileContents
+            'google' | 'google:CRAWL FAILED\n'
+            'yahoo'  | 'yahoo:CRAWL FAILED\n'
+    }
 }

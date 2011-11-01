@@ -25,10 +25,11 @@ public class BugsList {
                     String[] parts = bugLine.split(":");
                     String name = parts[1];
                     String regex = parts[0];
+                    String regexWithWildcard = ".*" + regex + ".*";
 
-                    allRegexesList.add(regex);
+                    allRegexesList.add(regexWithWildcard);
 
-                    Pattern pattern = Pattern.compile(regex);
+                    Pattern pattern = Pattern.compile(regexWithWildcard);
                     bugPatterns.put(pattern, name);
                 }
             } catch (IOException e) {}

@@ -19,15 +19,16 @@ public class CrawlerWorkerSpec extends Specification {
         bugsList = mock(BugsList)
         writer = mock(ResultsWriter)
 
-        worker = new CrawlerWorker(fetcher: fetcher, queue: queue, bugsList: bugsList, resultsWriter: writer)
+        worker = new CrawlerWorker(queue, writer, fetcher, bugsList)
     }
 
     def 'crawler registers failure when unable to connect'() {
 
         given:
+            fetcher.getHtml("http://www.google.com").raises(new IOException())
             fetcher.getHtml("http://google.com").raises(new IOException())
 
-            queue.returnUrl('google.com')
+            writer.registerFailedCrawl('google.com')
 
         when:
             play {
@@ -41,7 +42,7 @@ public class CrawlerWorkerSpec extends Specification {
     def 'crawler registers success but with empty bugs list for site with no relevant tags in markup'() {
 
         given:
-            fetcher.getHtml("http://google.com").returns(Jsoup.parse('<html><p class="nothing"></p></html>'))
+            fetcher.getHtml("http://www.google.com").returns(Jsoup.parse('<html><p class="nothing"></p></html>'))
 
             writer.registerSuccessfulCrawl('google.com', [])
 
@@ -58,7 +59,7 @@ public class CrawlerWorkerSpec extends Specification {
     def 'crawler registers success but with empty bugs list for site with relevant tags but no bugs'() {
 
         given:
-            fetcher.getHtml("http://google.com").returns(Jsoup.parse('<html><img src="nothing"/></html>'))
+            fetcher.getHtml("http://www.google.com").returns(Jsoup.parse('<html><img src="nothing"/></html>'))
 
             writer.registerSuccessfulCrawl('google.com', [])
 
@@ -78,7 +79,7 @@ public class CrawlerWorkerSpec extends Specification {
     def 'crawler registers success but with single bug for site with 1 bug in tag'() {
 
         given:
-            fetcher.getHtml("http://google.com").returns(Jsoup.parse('<html><' + tagType + ' src="nothing"/></html>'))
+            fetcher.getHtml("http://www.google.com").returns(Jsoup.parse('<html><' + tagType + ' src="nothing"/></html>'))
 
             writer.registerSuccessfulCrawl('google.com', ['someTrackingSoftware'])
 
@@ -101,7 +102,7 @@ public class CrawlerWorkerSpec extends Specification {
     def 'crawler registers multiple bugs'() {
 
         given:
-            fetcher.getHtml("http://google.com").returns(Jsoup.parse(html))
+            fetcher.getHtml("http://www.google.com").returns(Jsoup.parse(html))
 
             writer.registerSuccessfulCrawl('google.com', expectedBugsList)
 
