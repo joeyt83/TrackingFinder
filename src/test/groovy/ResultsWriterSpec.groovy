@@ -4,6 +4,8 @@ import spock.lang.Shared
 class ResultsWriterSpec extends Specification {
 
     @Shared String fileLocation = "temp"
+    @Shared Website google = new Website('google')
+    @Shared Website yahoo = new Website('yahoo')
 
     def tearDown() {
         new File(fileLocation).delete()
@@ -16,18 +18,18 @@ class ResultsWriterSpec extends Specification {
             ResultsWriter resultsWriter = new ResultsWriter(fileLocation)
 
         when:
-            results.each { String url, List results ->
-                resultsWriter.registerSuccessfulCrawl(url, results)
+            results.each { Website site, List results ->
+                resultsWriter.registerSuccessfulCrawl(site, results)
             }
 
         then:
             new File(fileLocation).text == expectedFileContents
 
         where:
-            results                                             | expectedFileContents
-            [google: []]                                        | 'google:[]\n'
-            [google: [], yahoo: ['coreMetrics']]                | 'google:[]\nyahoo:[coreMetrics]\n'
-            [google: [], yahoo: ['coreMetrics', 'clickTracks']] | 'google:[]\nyahoo:[coreMetrics,clickTracks]\n'
+            results                                                                               | expectedFileContents
+            [(google): []]                                                         | 'google:[]\n'
+            [(google): [], (yahoo): ['coreMetrics']]                | 'google:[]\nyahoo:[coreMetrics]\n'
+            [(google): [], (yahoo): ['coreMetrics', 'clickTracks']] | 'google:[]\nyahoo:[coreMetrics,clickTracks]\n'
 
     }
 
@@ -37,14 +39,14 @@ class ResultsWriterSpec extends Specification {
             ResultsWriter resultsWriter = new ResultsWriter(fileLocation)
 
         when:
-            resultsWriter.registerFailedCrawl(url)
+            resultsWriter.registerFailedCrawl(site)
 
         then:
             new File(fileLocation).text == expectedFileContents
 
         where:
-            url      | expectedFileContents
-            'google' | 'google:CRAWL FAILED\n'
-            'yahoo'  | 'yahoo:CRAWL FAILED\n'
+            site   | expectedFileContents
+            google | 'google:CRAWL FAILED\n'
+            yahoo  | 'yahoo:CRAWL FAILED\n'
     }
 }

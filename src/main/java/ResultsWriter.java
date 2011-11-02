@@ -3,11 +3,13 @@ import com.google.common.base.Joiner;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 
 public class ResultsWriter {
 
     BufferedWriter writer;
+    int resultCount = 0;
     private final Object lock = new Object();
 
     public ResultsWriter(String fileLocation) {
@@ -18,16 +20,16 @@ public class ResultsWriter {
         }
     }
 
-    void registerSuccessfulCrawl(String url, List<String> bugsFound) {
-        String resultsLine = url + ":[";
+    void registerSuccessfulCrawl(Website site, List<String> bugsFound) {
+        String resultsLine = site.domain + ":[";
         resultsLine += Joiner.on(",").join(bugsFound);
         resultsLine += "]";
 
         writeResultsToFile(resultsLine);
     }
 
-    void registerFailedCrawl(String url) {
-        String resultsLine = url + ":CRAWL FAILED";
+    void registerFailedCrawl(Website site) {
+        String resultsLine = site.domain + ":CRAWL FAILED";
         writeResultsToFile(resultsLine);
 
     }
@@ -37,6 +39,8 @@ public class ResultsWriter {
             synchronized (lock) {
                 writer.write(resultsLine + "\n");
                 writer.flush();
+                if(++resultCount % 100 == 0)
+                    System.out.println(resultCount + " at " + new Date().toString());
             }
         } catch (IOException e) {
             e.printStackTrace();

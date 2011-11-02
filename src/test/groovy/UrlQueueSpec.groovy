@@ -9,11 +9,11 @@ class UrlQueueSpec extends Specification {
 
         when:
             expectedNumberOfUrls.times {
-                assert queue.getNextUrl() != null
+                assert queue.getNextSite() != null
             }
 
         then:
-            queue.getNextUrl() == null
+            queue.getNextSite() == null
 
         where:
             location                             | expectedNumberOfUrls
@@ -28,15 +28,15 @@ class UrlQueueSpec extends Specification {
 
         when:
             expectedNumberOfUrls.times {
-                queue.returnUrl(queue.getNextUrl())
+                queue.returnFailedSiteToQueue(queue.getNextSite())
             }
 
             expectedNumberOfUrls.times {
-                assert queue.getNextUrl() != null
+                assert queue.getNextSite() != null
             }
 
         then:
-            queue.getNextUrl() == null
+            queue.getNextSite() == null
 
         where:
             location                             | expectedNumberOfUrls

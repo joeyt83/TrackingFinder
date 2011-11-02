@@ -23,39 +23,25 @@ public class CrawlerWorker implements Runnable {
     }
 
     public void run() {
-        String url = null;
-        while ((url = queue.getNextUrl()) != null) {
-            crawlSite(url);
+        Website site;
+        while ((site = queue.getNextSite()) != null) {
+            crawlSite(site);
         }
-        System.out.println("Thread finishing " + Thread.currentThread().getName());
-
     }
 
-    void crawlSite(String domain) {
+    void crawlSite(Website site) {
 
-        Document html = null;
-
-//        long time1 = System.currentTimeMillis();
-
-        try {
-            html = fetcher.getHtml("http://www." + domain);
-        } catch (IOException e) {
-        }
-
-        if (html == null) {
-            try {
-                html = fetcher.getHtml("http://" + domain);
-            } catch (IOException e) {
-                resultsWriter.registerFailedCrawl(domain);
-                return;
+        Document html = getAndParseDocument(site);
+        if(html == null) {
+            if(++site.failCount >= 5) {
+                resultsWriter.registerFailedCrawl(site);
+            } else {
+                queue.returnFailedSiteToQueue(site);
             }
+            return;
         }
-
-//        long time2 = System.currentTimeMillis();
-
 
         List<Element> watchedElements = new ArrayList<Element>();
-
         for (String tagName : watchedPageElements) {
             List<Element> els = html.getElementsByTag(tagName);
             watchedElements.addAll(els);
@@ -74,12 +60,26 @@ public class CrawlerWorker implements Runnable {
                 }
             }
         }
-//        long time3 = System.currentTimeMillis();
-        resultsWriter.registerSuccessfulCrawl(domain, bugsFound);
 
-//        System.out.println("getTime = " + (time2 - time1));
-//        System.out.println("calculateTime = " + (time3 - time2) + " for " + watchedElements.size() + "els");
+        resultsWriter.registerSuccessfulCrawl(site, bugsFound);
 
+    }
 
+    private Document getAndParseDocument(Website site) {
+        Document html = null;
+        try {
+            html = fetcher.getHtml("http://www." + site.domain);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+        if (html == null) {
+            try {
+                html = fetcher.getHtml("http://" + site.domain);
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+        }
+        return html;
     }
 }
