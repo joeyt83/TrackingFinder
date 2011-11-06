@@ -1,7 +1,6 @@
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -33,20 +32,17 @@ public class CrawlerWorker implements Runnable {
 
         Document html = getAndParseDocument(site);
         if(html == null) {
-            if(++site.failCount >= 5) {
-                resultsWriter.registerFailedCrawl(site);
-            } else {
-                queue.returnFailedSiteToQueue(site);
-            }
+            handleFailure(site);
             return;
         }
 
-        List<Element> watchedElements = new ArrayList<Element>();
-        for (String tagName : watchedPageElements) {
-            List<Element> els = html.getElementsByTag(tagName);
-            watchedElements.addAll(els);
-        }
+        List<Element> watchedElements = collectAllWatchedPageElements(html);
+        ArrayList<String> bugsFound = findBugsFromWatchedElements(watchedElements);
+        resultsWriter.registerSuccessfulCrawl(site, bugsFound);
 
+    }
+
+    private ArrayList<String> findBugsFromWatchedElements(List<Element> watchedElements) {
         ArrayList<String> bugsFound = new ArrayList<String>();
         for (Element el : watchedElements) {
             String source = el.attr("src");
@@ -60,9 +56,24 @@ public class CrawlerWorker implements Runnable {
                 }
             }
         }
+        return bugsFound;
+    }
 
-        resultsWriter.registerSuccessfulCrawl(site, bugsFound);
+    private List<Element> collectAllWatchedPageElements(Document html) {
+        List<Element> watchedElements = new ArrayList<Element>();
+        for (String tagName : watchedPageElements) {
+            List<Element> els = html.getElementsByTag(tagName);
+            watchedElements.addAll(els);
+        }
+        return watchedElements;
+    }
 
+    private void handleFailure(Website site) {
+        if(++site.failCount >= 5) {
+            resultsWriter.registerFailedCrawl(site);
+        } else {
+            queue.returnFailedSiteToQueue(site);
+        }
     }
 
     private Document getAndParseDocument(Website site) {
@@ -70,14 +81,14 @@ public class CrawlerWorker implements Runnable {
         try {
             html = fetcher.getHtml("http://www." + site.domain);
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+//            System.out.println(e.getMessage());
         }
 
         if (html == null) {
             try {
                 html = fetcher.getHtml("http://" + site.domain);
             } catch (Exception e) {
-                System.out.println(e.getMessage());
+//                System.out.println(e.getMessage());
             }
         }
         return html;

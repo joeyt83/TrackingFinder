@@ -30,8 +30,8 @@ public class ResultsWriter {
 
     void registerFailedCrawl(Website site) {
         String resultsLine = site.domain + ":CRAWL FAILED";
-        writeResultsToFile(resultsLine);
 
+        writeResultsToFile(resultsLine);
     }
 
      private void writeResultsToFile(String resultsLine) {
@@ -40,7 +40,7 @@ public class ResultsWriter {
                 writer.write(resultsLine + "\n");
                 writer.flush();
                 if(++resultCount % 100 == 0)
-                    System.out.println(resultCount + " at " + new Date().toString());
+                    System.out.println(resultCount);
             }
         } catch (IOException e) {
             e.printStackTrace();

@@ -12,6 +12,26 @@ public class BugsList {
         initialisePatterns(fileLocation);
     }
 
+    public String getBugNameForString(String pattern) {
+        String namedBug = null;
+        for(Map.Entry<Pattern, String> e: bugPatterns.entrySet()) {
+          Pattern p = e.getKey();
+            if(p.matcher(pattern).matches()) {
+                namedBug = e.getValue();
+                break;
+            }
+        }
+        return namedBug;
+    }
+
+    public int getnumberOfBugs() {
+        return bugPatterns.size();
+    }
+
+    public boolean hasMatchingPatterns(String resource) {
+        return motherPattern.matcher(resource).matches();
+    }
+
     private void initialisePatterns(String fileLocation) {
         FileInputStream fstream = null;
         try { fstream = new FileInputStream(fileLocation); } catch (FileNotFoundException e) {}
@@ -36,25 +56,5 @@ public class BugsList {
 
         String motherRegex = Joiner.on("|").join(allRegexesList);
         motherPattern = Pattern.compile(motherRegex);
-    }
-
-    public String getBugNameForString(String pattern) {
-        String namedBug = null;
-        for(Map.Entry<Pattern, String> e: bugPatterns.entrySet()) {
-          Pattern p = e.getKey();
-            if(p.matcher(pattern).matches()) {
-                namedBug = e.getValue();
-                break;
-            }
-        }
-        return namedBug;
-    }
-
-    public int getnumberOfBugs() {
-        return bugPatterns.size();
-    }
-
-    public boolean hasMatchingPatterns(String resource) {
-        return motherPattern.matcher(resource).matches();
     }
 }

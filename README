@@ -1,0 +1,10 @@
+Tracking Finder is a program which visits a list of websites and will print a list of tracking scripts present on these websites.
+Tracking Finder needs gradle to build and run - http://www.gradle.org/
+
+How to run:
+
+gradle run
+
+How to run the tests (it has full unit test coverage)
+
+gradle test.
